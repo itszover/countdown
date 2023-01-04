@@ -160,6 +160,10 @@ button:focus {
     font-size: 35px;
   }
 
+  .top-image {
+    display: none;
+  }
+
   .bottom-image {
     display: none;
   }
