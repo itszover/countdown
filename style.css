@@ -153,12 +153,6 @@ button:focus {
   .box {
     width: 100%;
   }
-}
-
-@media (max-width: 560px) {
-  p {
-    font-size: 35px;
-  }
 
   .top-image {
     display: none;
@@ -166,5 +160,11 @@ button:focus {
 
   .bottom-image {
     display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  p {
+    font-size: 35px;
   }
 }
