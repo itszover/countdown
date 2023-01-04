@@ -154,3 +154,9 @@ button:focus {
     width: 100%;
   }
 }
+
+@media (max-width: 560px) {
+  p {
+    font-size: 35px;
+  }
+}
