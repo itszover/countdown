@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+main {
+  height: 100vh;
+}
+
+dialog {
+  padding: 50px;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-box button {
+  margin-top: 1rem;
+}
+
+.modal-box label {
+  color: var(--text-color);
+}
+
+.modal-box input {
+  color: var(--text-color);
+  border: 1px solid var(--purple);
+  border-radius: 4px;
+}
+
+.modal-box input:focus {
+  outline: 0;
+}
+
+.modal-box:focus-within {
+  color: red;
+  border-color: red;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 50%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--purple);
+}
+
+ul {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--light-grey);
+  list-style: none;
+
+  display: inline-flex;
+}
+
+ul li:first-child {
+  margin-right: 100px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 72px;
+  color: var(--black);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--purple);
+  border-radius: 10px;
+  border: none;
+  padding: 16px 32px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+
+  transition: 300ms ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.top-image {
+  height: 18%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("assets/top-image.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bottom-image {
+  height: 18%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: url("assets/bottom-image.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (max-width: 1145px) {
+  picture {
+    display: none;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
