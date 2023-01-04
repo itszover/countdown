@@ -159,4 +159,8 @@ button:focus {
   p {
     font-size: 35px;
   }
+
+  .bottom-image {
+    display: none;
+  }
 }
